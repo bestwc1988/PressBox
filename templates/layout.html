@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{ config['SITE_NAME'] }}</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+{% block body %}
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div id="navlogo">
+                <a href='/'>
+                    <img src="http://placehold.it/200x50" alt="123">
+                </a>
+            </div>
+            <div id="navcontent">
+                <ul>
+                    <li>
+                        哈哈！
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    {% block content %}{% endblock %}
+
+<div class=footer>
+    <hr />
+    <p align=center>Yes!</p>
+</div>
+{% endblock %}
+</body>
+    </html>
